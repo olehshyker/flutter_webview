@@ -1,16 +1,41 @@
 # flutter_webview
 
-Basic Flutter webview app
+**Basic Flutter WebView App**  
+A simple Flutter project that displays web content inside a native WebView, with Firebase Remote Config integration for dynamic URLs.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## **Features**
+- **WebView** using `webview_flutter`
+- **Firebase Remote Config** for managing dynamic web URLs
+---
 
-A few resources to get you started if this is your first Flutter project:
+## **Dependencies**
+- `webview_flutter` – Web content display
+- `firebase_core` & `firebase_remote_config` – Firebase integration
+- `flutter_native_splash` – Native splash screen
+- `auto_route` – Declarative routing
+- `get_it` – Service locator for dependency injection
+- `loading_indicator` – Custom loading animations
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## **Setup**
+1. **Install Flutter dependencies**
+   ```bash
+   flutter pub get
+   ```
+
+2. **Set up Firebase**
+    - Add your `google-services.json` (Android) and `GoogleService-Info.plist` (iOS)
+    - Enable **Remote Config** in Firebase Console
+
+3. **Generate code**
+   ```bash
+   flutter pub run build_runner build --delete-conflicting-outputs
+   ```
+
+4. **Run the app**
+   ```bash
+   flutter run
+   ```
